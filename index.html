@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Richard Thomas Banda — Developer</title>
+<title>Richard Thomas Banda - Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    RESET & ROOT
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg:#08080a;--bg-2:#0f0f12;--bg-3:#161619;
@@ -40,9 +40,9 @@ a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
 button{cursor:none;border:none;background:none;font-family:inherit}
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    SCROLL PROGRESS
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 #scroll-progress{
   position:fixed;top:0;left:0;z-index:9999;
   height:2px;width:0%;
@@ -56,9 +56,9 @@ button{cursor:none;border:none;background:none;font-family:inherit}
   0%{background-position:100% 0}100%{background-position:-100% 0}
 }
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    LOADER
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 #loader{
   position:fixed;inset:0;z-index:9998;
   background:var(--bg);
@@ -90,9 +90,9 @@ button{cursor:none;border:none;background:none;font-family:inherit}
   opacity:0;animation:fadeUp 0.5s var(--ease) 0.6s forwards;
 }
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    CUSTOM CURSOR
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 .cur-dot{
   width:6px;height:6px;
   background:var(--accent);border-radius:50%;
@@ -125,9 +125,9 @@ button{cursor:none;border:none;background:none;font-family:inherit}
 .cursor-click .cur-dot{width:3px;height:3px}
 .cursor-click .cur-ring{width:22px;height:22px;border-color:var(--accent-2)}
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    GRAIN OVERLAY
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 .grain{
   position:fixed;inset:0;z-index:9990;
   pointer-events:none;opacity:0.05;
@@ -143,9 +143,9 @@ button{cursor:none;border:none;background:none;font-family:inherit}
   100%{transform:translate(0,0)}
 }
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    BACK TO TOP
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 #btt{
   position:fixed;bottom:2rem;right:2rem;z-index:1000;
   width:52px;height:52px;
@@ -169,9 +169,9 @@ button{cursor:none;border:none;background:none;font-family:inherit}
 #btt svg{transition:transform 0.3s var(--ease);pointer-events:none}
 #btt:hover svg{transform:translateY(-2px)}
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    NAV
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:100;
   display:flex;align-items:center;justify-content:space-between;
@@ -300,9 +300,9 @@ nav.scrolled{
 }
 .mobile-nav-footer a:hover{color:var(--accent)}
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    HERO
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 .hero{
   min-height:100svh;
   display:flex;flex-direction:column;justify-content:flex-end;
@@ -478,9 +478,9 @@ nav.scrolled{
   0%{top:-100%}50%{top:100%}100%{top:100%}
 }
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    STATS BAND
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 .stats-band{
   display:grid;grid-template-columns:repeat(4,1fr);
   border-bottom:1px solid var(--border);
@@ -521,9 +521,9 @@ nav.scrolled{
   color:var(--text-3);
 }
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    SECTION BASE
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 section{
   padding:7rem 3rem;
   border-bottom:1px solid var(--border);
@@ -571,9 +571,9 @@ section{
   .section-line{width:100%;margin-left:0}
 }
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    ABOUT
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 .about-grid{
   display:grid;grid-template-columns:1fr 1fr;
   gap:6rem;align-items:start;
@@ -610,9 +610,9 @@ section{
 .tag:hover::before{opacity:0.15}
 .tag:hover{border-color:var(--accent)}
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    PROJECTS
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 .project-item{
   display:grid;grid-template-columns:3.5rem 1fr auto;
   gap:3rem;align-items:start;
@@ -832,9 +832,9 @@ section{
 .device-wrap:hover .device-tilt::after{opacity:1}
 
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    LIGHTBOX
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 #lightbox{
   position:fixed;inset:0;z-index:9980;
   background:rgba(4,4,6,0.9);
@@ -955,16 +955,16 @@ section{
   .lb-thumb{width:84px;height:52px}
 }
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    PICTURE BACKGROUND BREAKS
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 .pic-break{
   padding:10rem 3rem;
   position:relative;overflow:hidden;
   border-bottom:1px solid var(--border);
   isolation:isolate;
 }
-/* Photo background — user can set background-image on .pic-break-photo */
+/* Photo background - user can set background-image on .pic-break-photo */
 .pic-break-photo{
   position:absolute;inset:0;z-index:-2;
   background-color:var(--bg);
@@ -983,7 +983,7 @@ section{
   position:absolute;inset:0;z-index:-1;
   pointer-events:none;
 }
-/* Break 1 — philosophy */
+/* Break 1 - philosophy */
 .pic-break-1 .pic-break-atmo{
   background:
     radial-gradient(ellipse 120% 80% at 70% 40%,
@@ -991,7 +991,7 @@ section{
     radial-gradient(ellipse 70% 90% at 20% 80%,
       rgba(80,50,180,0.08) 0%,transparent 50%);
 }
-/* Break 2 — process */
+/* Break 2 - process */
 .pic-break-2 .pic-break-atmo{
   background:
     radial-gradient(ellipse 100% 70% at 30% 50%,
@@ -1076,9 +1076,9 @@ section{
   color:var(--text-3);
 }
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    SKILLS
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 .skills-section{background:var(--bg);overflow:hidden}
 .skills-bg{
   position:absolute;inset:0;
@@ -1116,7 +1116,7 @@ section{
 .marquee-dot{width:4px;height:4px;background:var(--accent);border-radius:50%;flex-shrink:0}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-/* Skills Grid — now with bars */
+/* Skills Grid - now with bars */
 .skills-grid{
   display:grid;grid-template-columns:repeat(3,1fr);
   gap:0;
@@ -1169,9 +1169,9 @@ section{
 }
 .skill-bar-fill.animated{width:var(--skill-w,0%)}
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    EXPERIENCE
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 .exp-item{
   display:grid;grid-template-columns:14rem 1fr;
   gap:2.5rem;padding:3rem 0;
@@ -1254,9 +1254,9 @@ section{
 }
 .cert-year::before{content:'';width:1rem;height:1px;background:var(--border-h)}
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    INLINE CONTACT FORM
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 .contact-form-wrap{
   max-height:0;overflow:hidden;
   transition:max-height 0.8s var(--ease),opacity 0.5s var(--ease);
@@ -1322,9 +1322,9 @@ section{
   letter-spacing:0.06em;
 }
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    FOOTER
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 footer{
   padding:8rem 3rem;position:relative;overflow:hidden;
 }
@@ -1406,9 +1406,9 @@ footer{
   color:var(--text-3);letter-spacing:0.1em;
 }
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    REVEAL SYSTEM
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 .reveal{
   opacity:0;transform:translateY(30px);
   transition:opacity 0.8s var(--ease),transform 0.8s var(--ease);
@@ -1423,9 +1423,9 @@ footer{
 
 @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    RESPONSIVE
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 @media(max-width:960px){
   .device-wrap{width:260px}
 }
@@ -1532,9 +1532,9 @@ footer{
   </div>
 </nav>
 
-<!-- ═══════════════════════════════════════
+<!-- =======================================
      HERO
-══════════════════════════════════════════ -->
+========================================== -->
 <header class="hero" id="hero">
   <div class="hero-bg">
     <div class="hero-grid"></div>
@@ -1545,7 +1545,7 @@ footer{
     <div class="particles" id="particles"></div>
   </div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Richard Thomas Banda — Developer &amp; Researcher</p>
+    <p class="hero-eyebrow">Richard Thomas Banda - Developer &amp; Researcher</p>
     <h1 class="hero-title">
       <span class="word"><span class="word-inner">Building</span></span>
       <span class="word"><span class="word-inner">software</span></span>
@@ -1556,10 +1556,10 @@ footer{
     <div class="hero-bottom">
       <p class="hero-desc">Final-year Business IT student at MUST, Malawi. I design and build mobile and web systems for real-world operations, with a focus on AI-assisted tools, offline-first products, and data-heavy workflows.</p>
       <div class="hero-meta">
-        <p>📍 <span>Malawi</span></p>
-        <p>🎓 Available <span>Aug 2026</span></p>
-        <p>🔭 Open to <span>Graduate Study</span></p>
-        <p>💡 Building with <span>AI & Mobile</span></p>
+        <p>Location: <span>Malawi</span></p>
+        <p>Education: Available <span>Aug 2026</span></p>
+        <p>Open: Open to <span>Graduate Study</span></p>
+        <p>Focus: Building with <span>AI & Mobile</span></p>
       </div>
     </div>
     <div class="hero-proof">
@@ -1594,9 +1594,9 @@ footer{
   </div>
 </header>
 
-<!-- ═══════════════════════════════════════
+<!-- =======================================
      STATS BAND
-══════════════════════════════════════════ -->
+========================================== -->
 <div class="stats-band">
   <div class="stat-item reveal">
     <div class="stat-num"><span class="counter" data-target="3">0</span>+</div>
@@ -1616,9 +1616,9 @@ footer{
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- =======================================
      ABOUT
-══════════════════════════════════════════ -->
+========================================== -->
 <section id="about">
   <div class="section-header reveal">
     <span class="section-num">01</span>
@@ -1659,9 +1659,9 @@ footer{
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════
+<!-- =======================================
      PROJECTS
-══════════════════════════════════════════ -->
+========================================== -->
 <section id="projects">
   <div class="section-header reveal">
     <span class="section-num">02</span>
@@ -1675,13 +1675,13 @@ footer{
     <!-- PROJECT 01 -->
         <div class="project-item reveal"
           data-project="Document Tracking System"
-          data-type="Web · Team Project"
+          data-type="Web - Team Project"
           data-screenshots="images/document-tracking-system/mobile-app-home.jpg,images/document-tracking-system/mobile-app-track-status.jpg,images/document-tracking-system/mobile-app-make-reservation.jpg,images/document-tracking-system/web-track-status.png,images/document-tracking-system/web-status-result.png,images/document-tracking-system/web-make-reservation.png,images/document-tracking-system/dash-light.png,images/document-tracking-system/dash-dark.png,images/document-tracking-system/centers-light.png,images/document-tracking-system/centers-dark.png,images/document-tracking-system/applications-light.png,images/document-tracking-system/applications-dark.png,images/document-tracking-system/reservation-light.png,images/document-tracking-system/reservation-dark.png">
 
       <div class="project-num">01</div>
 
       <div class="project-info">
-        <div class="project-type-tag">Web · Team Project</div>
+        <div class="project-type-tag">Web - Team Project</div>
         <h3 class="project-title">Document Tracking System</h3>
         <p class="project-period">Nov 2025 - Jan 2026</p>
 
@@ -1712,8 +1712,8 @@ footer{
           <img src="images/document-tracking-system/mobile-app-home.jpg" alt="preview" data-current="0">
           <div class="preview-overlay">View Screenshots</div>
           <div class="preview-nav">
-            <button class="preview-prev" aria-label="Previous preview">‹</button>
-            <button class="preview-next" aria-label="Next preview">›</button>
+            <button class="preview-prev" aria-label="Previous preview"><</button>
+            <button class="preview-next" aria-label="Next preview">></button>
           </div>
         </div>
       </div>
@@ -1723,13 +1723,13 @@ footer{
     <!-- PROJECT 02 -->
         <div class="project-item reveal"
           data-project="ZaChuma Financial Literacy App"
-          data-type="Mobile · Research Project"
+          data-type="Mobile - Research Project"
           data-screenshots="images/zachuma/placeholder.svg">
 
       <div class="project-num">02</div>
 
       <div class="project-info">
-        <div class="project-type-tag">Mobile · Research Project</div>
+        <div class="project-type-tag">Mobile - Research Project</div>
         <h3 class="project-title">ZaChuma Financial Literacy App</h3>
         <p class="project-period">Apr 2025 - Oct 2025</p>
 
@@ -1760,8 +1760,8 @@ footer{
           <img src="images/zachuma/placeholder.svg" alt="preview" data-current="0">
           <div class="preview-overlay">View Screenshots</div>
           <div class="preview-nav">
-            <button class="preview-prev" aria-label="Previous preview">‹</button>
-            <button class="preview-next" aria-label="Next preview">›</button>
+            <button class="preview-prev" aria-label="Previous preview"><</button>
+            <button class="preview-next" aria-label="Next preview">></button>
           </div>
         </div>
       </div>
@@ -1771,13 +1771,13 @@ footer{
     <!-- PROJECT 03 -->
         <div class="project-item reveal"
           data-project="Xport E-Commerce App"
-          data-type="Mobile · Personal Project"
+          data-type="Mobile - Personal Project"
           data-screenshots="images/xport/placeholder.svg">
 
       <div class="project-num">03</div>
 
       <div class="project-info">
-        <div class="project-type-tag">Mobile · Personal Project</div>
+        <div class="project-type-tag">Mobile - Personal Project</div>
         <h3 class="project-title">Xport E-Commerce App</h3>
         <p class="project-period">Oct 2025</p>
 
@@ -1807,8 +1807,8 @@ footer{
           <img src="images/xport/placeholder.svg" alt="preview" data-current="0">
           <div class="preview-overlay">View Screenshots</div>
           <div class="preview-nav">
-            <button class="preview-prev" aria-label="Previous preview">‹</button>
-            <button class="preview-next" aria-label="Next preview">›</button>
+            <button class="preview-prev" aria-label="Previous preview"><</button>
+            <button class="preview-next" aria-label="Next preview">></button>
           </div>
         </div>
       </div>
@@ -1818,11 +1818,11 @@ footer{
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     PICTURE BREAK 1 — PHILOSOPHY
-══════════════════════════════════════════ -->
+<!-- =======================================
+     PICTURE BREAK 1 - PHILOSOPHY
+========================================== -->
 <!--
-  📸 PHOTO BACKGROUND INSTRUCTIONS:
+  Photo: PHOTO BACKGROUND INSTRUCTIONS:
   To add a real photo here, add this CSS to .pic-break-1 .pic-break-photo:
     background-image: url('your-photo.jpg');
   Recommended: dark, abstract, or landscape photography
@@ -1836,13 +1836,13 @@ footer{
   <div class="pic-break-content reveal">
     <p class="pb-label">Philosophy</p>
     <h2 class="pb-title">Software that solves <em>real problems</em><br>for real people.</h2>
-    <p class="pb-body">Every system I build starts with a human need — whether it's a citizen collecting an ID, a student learning to save, or a small business reaching global buyers.</p>
+    <p class="pb-body">Every system I build starts with a human need - whether it's a citizen collecting an ID, a student learning to save, or a small business reaching global buyers.</p>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- =======================================
      SKILLS
-══════════════════════════════════════════ -->
+========================================== -->
 <section id="skills" class="skills-section">
   <div class="skills-bg"></div>
   <div style="position:relative;z-index:1">
@@ -1918,11 +1918,11 @@ footer{
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     PICTURE BREAK 2 — PROCESS
-══════════════════════════════════════════ -->
+<!-- =======================================
+     PICTURE BREAK 2 - PROCESS
+========================================== -->
 <!--
-  📸 PHOTO BACKGROUND INSTRUCTIONS:
+  Photo: PHOTO BACKGROUND INSTRUCTIONS:
   To add a real photo to this section, add to .pic-break-2 .pic-break-photo:
     background-image: url('your-second-photo.jpg');
 -->
@@ -1934,7 +1934,7 @@ footer{
   <div class="pb-orb pb-orb-2" style="animation-delay:-6s"></div>
   <div class="pic-break-content reveal">
     <p class="pb-label">How I Work</p>
-    <h2 class="pb-title">From <em>idea</em> to impact — systematic & iterative.</h2>
+    <h2 class="pb-title">From <em>idea</em> to impact - systematic & iterative.</h2>
     <p class="pb-body">Every project moves through a clear arc: understand the problem deeply, design with users in mind, build iteratively, and ship with confidence.</p>
     <div class="pb-steps">
       <div class="pb-step">
@@ -1957,9 +1957,9 @@ footer{
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- =======================================
      EXPERIENCE
-══════════════════════════════════════════ -->
+========================================== -->
 <section id="experience">
   <div class="section-header reveal">
     <span class="section-num">04</span>
@@ -1970,7 +1970,7 @@ footer{
   <div>
     <div class="exp-item reveal">
       <div>
-        <div class="exp-date">Feb 2026 – Present</div>
+        <div class="exp-date">Feb 2026 - Present</div>
         <div class="exp-org">MUST</div>
       </div>
       <div>
@@ -1980,8 +1980,8 @@ footer{
     </div>
     <div class="exp-item reveal d2">
       <div>
-        <div class="exp-date">Jun 2022 – Aug 2026</div>
-        <div class="exp-org">MUST · Thyolo</div>
+        <div class="exp-date">Jun 2022 - Aug 2026</div>
+        <div class="exp-org">MUST - Thyolo</div>
       </div>
       <div>
         <h3 class="exp-role">BSc Business Information Technology</h3>
@@ -1996,20 +1996,20 @@ footer{
       <div class="cert-year">2025</div>
     </div>
     <div class="cert-card reveal d2">
-      <div class="cert-issuer">Ivey Business School · 39 Country Initiative</div>
+      <div class="cert-issuer">Ivey Business School - 39 Country Initiative</div>
       <div class="cert-name">Case Teaching Workshop</div>
       <div class="cert-year">2025</div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════
+<!-- =======================================
      FOOTER / CONTACT
-══════════════════════════════════════════ -->
+========================================== -->
 <footer id="contact">
   <div class="footer-bg"></div>
   <div class="footer-inner">
-    <p class="footer-eyebrow reveal">05 — Contact</p>
+    <p class="footer-eyebrow reveal">05 - Contact</p>
     <h2 class="footer-cta reveal d1">Got a project or opportunity? <em>Let's build something.</em></h2>
     <div class="footer-actions reveal d2">
       <a href="mailto:richardthomasbanda@gmail.com" class="contact-email">richardthomasbanda@gmail.com</a>
@@ -2061,14 +2061,14 @@ footer{
           +265 993 283 331
         </a>
       </div>
-      <div class="footer-copy">© 2026 Richard Thomas Banda</div>
+      <div class="footer-copy">(C) 2026 Richard Thomas Banda</div>
     </div>
   </div>
 </footer>
 
-<!-- ═══════════════════════════════════════
+<!-- =======================================
      LIGHTBOX MODAL
-══════════════════════════════════════════ -->
+========================================== -->
 <div id="lightbox" role="dialog" aria-modal="true" aria-label="Project screenshots">
   <div class="lb-inner">
     <div class="lb-toolbar">
@@ -2100,17 +2100,17 @@ footer{
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- =======================================
      JAVASCRIPT
-══════════════════════════════════════════ -->
+========================================== -->
 <script>
-/* ── HELPERS ── */
+/* -- HELPERS -- */
 const qs  = s => document.querySelector(s);
 const qsa = s => document.querySelectorAll(s);
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    LOADER
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 (function(){
   const loader  = qs('#loader');
   const line    = qs('#loaderLine');
@@ -2127,18 +2127,18 @@ const qsa = s => document.querySelectorAll(s);
   }, 80);
 })();
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    SCROLL PROGRESS
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 const progressBar = qs('#scroll-progress');
 window.addEventListener('scroll', ()=>{
   const total = document.body.scrollHeight - window.innerHeight;
   progressBar.style.width = (scrollY / total * 100) + '%';
 }, { passive: true });
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    CUSTOM CURSOR
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 (function(){
   const dot   = qs('#curDot');
   const ring  = qs('#curRing');
@@ -2169,9 +2169,9 @@ window.addEventListener('scroll', ()=>{
   document.addEventListener('mouseenter',()=>{ dot.style.opacity='1'; ring.style.opacity='1'; });
 })();
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    PARTICLES (hero)
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 (function(){
   const container = qs('#particles');
   if(!container) return;
@@ -2192,9 +2192,9 @@ window.addEventListener('scroll', ()=>{
   }
 })();
 
-/* ─────────────────────────────────────────────────────────────
-   NAV — scroll state + active links
-───────────────────────────────────────────────────────────── */
+/* -------------------------------------------------------------
+   NAV - scroll state + active links
+------------------------------------------------------------- */
 (function(){
   const nav = qs('#nav');
   const links = qsa('.nav-links a');
@@ -2214,9 +2214,9 @@ window.addEventListener('scroll', ()=>{
   }, { passive:true });
 })();
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    MOBILE NAV
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 (function(){
   const burger   = qs('#hamburger');
   const mobileNav= qs('#mobileNav');
@@ -2239,9 +2239,9 @@ window.addEventListener('scroll', ()=>{
   });
 })();
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    BACK TO TOP
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 (function(){
   const btt = qs('#btt');
   window.addEventListener('scroll', ()=>{
@@ -2252,9 +2252,9 @@ window.addEventListener('scroll', ()=>{
   });
 })();
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    SCROLL REVEAL
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 (function(){
   const ro = new IntersectionObserver(entries=>{
     entries.forEach(en=>{
@@ -2267,9 +2267,9 @@ window.addEventListener('scroll', ()=>{
   qsa('.reveal').forEach(el=> ro.observe(el));
 })();
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    COUNTER ANIMATION
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 (function(){
   function animCounter(el){
     const target = +el.dataset.target;
@@ -2295,9 +2295,9 @@ window.addEventListener('scroll', ()=>{
   qsa('.stats-band').forEach(el=> cro.observe(el));
 })();
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    SKILL BAR ANIMATION
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 (function(){
   const sro = new IntersectionObserver(entries=>{
     entries.forEach(en=>{
@@ -2312,9 +2312,9 @@ window.addEventListener('scroll', ()=>{
   qsa('.skills-grid').forEach(el=> sro.observe(el));
 })();
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    3D TILT ON MOCKUPS
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 (function(){
   qsa('.device-wrap').forEach(wrap=>{
     const tilt = wrap.querySelector('.device-tilt');
@@ -2343,9 +2343,9 @@ window.addEventListener('scroll', ()=>{
   });
 })();
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    PARALLAX (hero orbs + pic-breaks)
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 (function(){
   const orbs = qsa('.orb');
   const pbPhotos = qsa('.pic-break-photo');
@@ -2364,9 +2364,9 @@ window.addEventListener('scroll', ()=>{
   }, { passive:true });
 })();
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    LIGHTBOX
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 (function(){
   const lb       = qs('#lightbox');
   const lbClose  = qs('#lbClose');
@@ -2472,9 +2472,9 @@ window.addEventListener('scroll', ()=>{
     // Add a small label indicating whether this is a mobile, web or admin screenshot
     try{
       let metaText = '';
-      if(/mobile/i.test(shot)) metaText = 'Mobile — citizen app';
-      else if(/web|web\-/i.test(shot)) metaText = 'Web — public pages';
-      else if(/dash|dashboard|admin|centers|applications|reservation/i.test(shot)) metaText = 'Admin — internal dashboard';
+      if(/mobile/i.test(shot)) metaText = 'Mobile - citizen app';
+      else if(/web|web\-/i.test(shot)) metaText = 'Web - public pages';
+      else if(/dash|dashboard|admin|centers|applications|reservation/i.test(shot)) metaText = 'Admin - internal dashboard';
       if(metaText){
         const meta = document.createElement('div');
         meta.className = 'lb-shot-meta';
@@ -2641,9 +2641,9 @@ window.addEventListener('scroll', ()=>{
   });
 })();
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    FORM TOGGLE
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 (function(){
   const btn  = qs('#formToggle');
   const wrap = qs('#contactFormWrap');
@@ -2661,7 +2661,7 @@ window.addEventListener('scroll', ()=>{
     e.preventDefault();
     const action = form.action;
     if(action.includes('YOUR_FORM_ID')){
-      alert('⚡ Replace YOUR_FORM_ID in the form action with your Formspree key to enable submissions.');
+      alert('! Replace YOUR_FORM_ID in the form action with your Formspree key to enable submissions.');
       return;
     }
     const data = new FormData(form);
@@ -2669,8 +2669,8 @@ window.addEventListener('scroll', ()=>{
       const res = await fetch(action, {method:'POST',body:data,headers:{Accept:'application/json'}});
       if(res.ok){
         form.innerHTML = `<div style="text-align:center;padding:2rem">
-          <div style="font-family:var(--fs);font-size:1.5rem;color:var(--accent);margin-bottom:1rem">✓ Message sent!</div>
-          <p style="color:var(--text-2);font-size:0.9rem">Thanks — I'll get back to you shortly.</p>
+          <div style="font-family:var(--fs);font-size:1.5rem;color:var(--accent);margin-bottom:1rem">+ Message sent!</div>
+          <p style="color:var(--text-2);font-size:0.9rem">Thanks - I'll get back to you shortly.</p>
         </div>`;
       }
     } catch(err){
@@ -2679,9 +2679,9 @@ window.addEventListener('scroll', ()=>{
   });
 })();
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    MAGNETIC NAV CTA
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 qsa('.nav-cta,.form-submit').forEach(btn=>{
   btn.addEventListener('mousemove', e=>{
     const r = btn.getBoundingClientRect();
@@ -2697,9 +2697,9 @@ qsa('.nav-cta,.form-submit').forEach(btn=>{
   btn.addEventListener('mouseenter', ()=> btn.style.transition = 'transform 0.1s linear');
 });
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    TEXT SCRAMBLE (hero eyebrow)
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 (function(){
   const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$&';
   function scramble(el, original, delay=0){
@@ -2710,7 +2710,7 @@ qsa('.nav-cta,.form-submit').forEach(btn=>{
           if(i < iter) return original[i];
           if(c === ' ') return ' ';
           if(c === '&') return '&';
-          if(c === '—') return '—';
+          if(c === '-') return '-';
           return CHARS[Math.floor(Math.random()*CHARS.length)];
         }).join('');
         if(iter >= original.length) clearInterval(iv);
@@ -2728,9 +2728,9 @@ qsa('.nav-cta,.form-submit').forEach(btn=>{
   }, 1300);
 })();
 
-/* ─────────────────────────────────────────────────────────────
+/* -------------------------------------------------------------
    SMOOTH HOVER GLOW on stat items
-───────────────────────────────────────────────────────────── */
+------------------------------------------------------------- */
 qsa('.stat-item').forEach(item=>{
   item.addEventListener('mousemove', e=>{
     const r = item.getBoundingClientRect();
@@ -2743,3 +2743,4 @@ qsa('.stat-item').forEach(item=>{
 </script>
 </body>
 </html>
+
