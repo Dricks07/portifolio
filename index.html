@@ -1514,7 +1514,15 @@ footer{
   body::before,body::after{display:none}
   .liquid-blob{display:none}
   .liquid{ -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
-  .hero-portrait{width:160px;height:160px;top:1rem;right:1.5rem}
+  .hero{
+    padding-top:6.5rem;
+  }
+  .hero-portrait{
+    position:static;
+    width:clamp(100px,34vw,160px);
+    height:clamp(100px,34vw,160px);
+    margin:0 auto 1.25rem;
+  }
   .cur-dot, .cur-ring, .cur-trail { display:none; }
   nav{padding:1.25rem 1.5rem}
   .nav-links{display:none}
@@ -1552,6 +1560,11 @@ footer{
 }
 @media(max-width:480px){
   .hero-title{font-size:clamp(2.5rem,11vw,3.8rem)}
+  .hero-portrait{
+    width:clamp(90px,36vw,120px);
+    height:clamp(90px,36vw,120px);
+    margin-bottom:1rem;
+  }
   .hero-scroll{right:1.5rem}
   .stat-item{padding:2rem 1.5rem}
 }
